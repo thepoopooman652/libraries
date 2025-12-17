@@ -40,10 +40,34 @@ function ranString(length, strType) {
     return result;
   } else if (strType == 'num') {
     // Number string generation
+        // Uppercase string generation
+    let result = '';
+    const charListLength = charList-num.length;
+    for (let i = 0; i < length; i++) {
+      // Generate a random index within the bounds of the character list
+      const randomIndex = Math.floor(Math.random() * charListLength);
+      // Append the character at the random index to the result string
+      result += charList-num.charAt(randomIndex); // If charList is a string
   } else if (strType == 'sym') {
     // Symbol string generation
+        // Uppercase string generation
+    let result = '';
+    const charListLength = charList-sym.length;
+    for (let i = 0; i < length; i++) {
+      // Generate a random index within the bounds of the character list
+      const randomIndex = Math.floor(Math.random() * charListLength);
+      // Append the character at the random index to the result string
+      result += charList-sym.charAt(randomIndex); // If charList is a string
   } else if (strType == 'all') {
     // All character string generation
+        // Uppercase string generation
+    let result = '';
+    const charListLength = charList-all.length;
+    for (let i = 0; i < length; i++) {
+      // Generate a random index within the bounds of the character list
+      const randomIndex = Math.floor(Math.random() * charListLength);
+      // Append the character at the random index to the result string
+      result += charList-all.charAt(randomIndex); // If charList is a string
   } else {
     console.error("Invalid string type in ranString() function call. Valid types: 'lower' 'upper' 'num' 'sym' 'all'");
 };
