@@ -1,0 +1,23 @@
+h1 { color: #464F62; }
+h2 { color: #464F62; }
+h3 { color: #464F62; }
+a { color: #B07B4F; text-decoration: none; }
+body { background-color: #BCC5D7; }
+strong { color: #EF4444; }
+.container { font-family: aptos-serif, sans-serif; }
+.center { text-align: center; }
+.left { position: fixed; left: 0; top: 50%; transform: translateY(-50%); margin: 5px;}
+.right { position: fixed; right: 0; top: 50%; transform: translateY(-50%); margin: 5px }
+.info-text { color: #4E414D; }        
+.custom-page-list { color: #B07B4F; text-decoration: none; margin: 30px; white-space: nowrap; display: inline text-align: center;}
+.custom-page-list-item { color: #B07B4F; text-decoration: none; margin: 20px; white-space: nowrap; display: inline; }
+.custom-page-list-item:hover { color: #808080; font-weight: bold; transition: background-color 0.3s ease; gap: 30px; }
+.page-list { color: #B07B4F; }
+.page-item { color: #B07B4F; text-decoration: none; margin: 20px; white-space: nowrap; display: inline; }
+.info-extra { color: #6F936C; }
+.contact-info { color: #B07B4F; }
+.contact-info-item { color: #B07B4F; text-decoration: none; margin: 20px; white-space: nowrap; display: inline; }
+.contact-info-item:hover { color: #808080; font-weight: bold; transition: background-color 0.3s ease; gap: 30px; }
+.project-list { color: #1E401C; }
+.project-list-item { color: #1E401C; text-decoration: none; margin: 30px; white-space: nowrap; display: inline; }
+.project-list-item:hover { color: #808080; font-weight: bold; transition: background-color 0.3s ease; gap: 30px; }
