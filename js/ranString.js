@@ -8,66 +8,46 @@
 //=                                            =
 //==============================================
 function ranString(length, strType) {
-  // Define all of the character lists
   var charList-lower = 'abcdefghijklmnopqrstuvwxyz';
   var charList-upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   var charList-num = '1234567890';
   var charList-sym = '`~!@#$%^&*()_-+=[{}]|\:;<,>.?/';
   var charlist-all = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890`~!@#$%^&*()_-+=[{}]|\:;<,>.?/';
 
-  // Generate a string based on the value of strType
   if (strType == 'lower') {
-    // Lowercase string generation
     let result = '';
     const charListLength = charList-lower.length;
     for (let i = 0; i < length; i++) {
-      // Generate a random index within the bounds of the character list
       const randomIndex = Math.floor(Math.random() * charListLength);
-      // Append the character at the random index to the result string
-      result += charList-lower.charAt(randomIndex); // If charList is a string
+      result += charList-lower.charAt(randomIndex);
     }
     return result;
   } else if (strType == 'upper') {
-    // Uppercase string generation
     let result = '';
     const charListLength = charList-upper.length;
     for (let i = 0; i < length; i++) {
-      // Generate a random index within the bounds of the character list
       const randomIndex = Math.floor(Math.random() * charListLength);
-      // Append the character at the random index to the result string
-      result += charList-upper.charAt(randomIndex); // If charList is a string
+      result += charList-upper.charAt(randomIndex);
     }
     return result;
   } else if (strType == 'num') {
-    // Number string generation
-        // Uppercase string generation
     let result = '';
     const charListLength = charList-num.length;
     for (let i = 0; i < length; i++) {
-      // Generate a random index within the bounds of the character list
       const randomIndex = Math.floor(Math.random() * charListLength);
-      // Append the character at the random index to the result string
-      result += charList-num.charAt(randomIndex); // If charList is a string
+      result += charList-num.charAt(randomIndex);
   } else if (strType == 'sym') {
-    // Symbol string generation
-        // Uppercase string generation
     let result = '';
     const charListLength = charList-sym.length;
     for (let i = 0; i < length; i++) {
-      // Generate a random index within the bounds of the character list
       const randomIndex = Math.floor(Math.random() * charListLength);
-      // Append the character at the random index to the result string
-      result += charList-sym.charAt(randomIndex); // If charList is a string
+      result += charList-sym.charAt(randomIndex);
   } else if (strType == 'all') {
-    // All character string generation
-        // Uppercase string generation
     let result = '';
     const charListLength = charList-all.length;
     for (let i = 0; i < length; i++) {
-      // Generate a random index within the bounds of the character list
-      const randomIndex = Math.floor(Math.random() * charListLength);
-      // Append the character at the random index to the result string
-      result += charList-all.charAt(randomIndex); // If charList is a string
+      const randomIndex = Math.floor(Math.random() * charListLength
+      result += charList-all.charAt(randomIndex);
   } else {
     console.error("Invalid string type in ranString() function call. Valid types: 'lower' 'upper' 'num' 'sym' 'all'");
 };
