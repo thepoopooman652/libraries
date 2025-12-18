@@ -26,7 +26,7 @@ const isEmpty = (obj) => {
 const generateRandom = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
-const ranStr = (length) {
+function ranStr(length) {
   const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
   let result = "";
   for (let i = 0; i < length; i++) {
